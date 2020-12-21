@@ -15,7 +15,6 @@ program.version('0.0.1').argument('[filename]', 'Name of a file to execute').act
 	} catch (err) {
 		throw new Error(`Could not find the file ${name}`);
 	}
-
 	let proc;
 	const start = debounce(() => {
 		if (proc) {
